@@ -34,9 +34,9 @@ Public Class ServerScript
 
     <Scriptlet("30088a27-4314-4551-b073-a9cf2d744497")> _
     Public Sub ClearAllAlarms(e As EventData)
-        For Each Alarm As AlarmData In Api.AlarmManager.GetAlarms()
-			Api.AlarmManager.Accept(Alarm)
-			Api.AlarmManager.Clear(Alarm)
-		Next
+	For Each Alarm As AlarmData In Api.AlarmManager.GetAlarms()
+		Api.AlarmManager.Accept(Alarm)
+		Api.AlarmManager.Clear(Alarm)
+	Next
     End Sub
 End Class
